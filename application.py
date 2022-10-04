@@ -52,11 +52,6 @@ lista_titulos.sort()
 
 titulos_all = list(dfobras['titulo'].unique())
 
-
-
-
-
-
 def convert_options(optionlabels, optionvals):
         return [dict(label=x, value=y) for x, y in zip(optionlabels, optionvals)]
 
@@ -70,9 +65,6 @@ def convert_options(optionlabels, optionvals):
 #    lista_combo_autores.append(item)
 
 #print(lista_combo_autores)
-
-#dfobras.loc[dfobras['autor'] == 'Viagens de Gulliver', 'titulo']
-
 
 def configurar_titulos_emocoes(autor_selecionado):
     dfobras_emocoes_tmp = dfobras_emocoes.loc[dfobras_emocoes['autor'] == autor_selecionado]
